@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: grey;
+}
+body header {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 70px;
+  height: 120px;
+}
+body header .logo {
+  margin: auto 0;
+}
+body header .logo img {
+  cursor: pointer;
+}
+body header nav {
+  margin: auto 0;
+}
+body header nav ul {
+  display: flex;
+  list-style: none;
+}
+body header nav ul li {
+  color: white;
+  font-size: 16px;
+  margin: 10px;
+}
+body header nav ul li:hover {
+  cursor: pointer;
+}
+body main .first {
+  color: white;
+  background-image: url("./img/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .first .textCont {
+  text-align: center;
+}
+body main .first .textCont h1 {
+  font-weight: bold;
+  font-size: 48px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+body main .first .textCont p {
+  margin: 0 auto;
+  max-width: 600px;
+  font-size: 18px;
+}
+body main .second {
+  background-color: #ffffff;
+}
+body main .second .secondWrapper {
+  margin: 0 auto;
+  max-width: 1090px;
+}
+@media (max-width: 978px) {
+  body main .second .secondWrapper {
+    padding: 0 20px;
+  }
+}
+body main .second .secondWrapper .filterCont {
+  height: 140px;
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+body main .second .secondWrapper .filterCont .filters {
+  display: flex;
+}
+body main .second .secondWrapper .filterCont .filters div {
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+}
+body main .second .secondWrapper .filterCont .filters div input {
+  margin: 9px;
+  width: 24px;
+  height: 24px;
+  display: block;
+  cursor: pointer;
+}
+body main .second .secondWrapper .filterCont .filters div span {
+  display: block;
+  margin: 9px;
+}
+body main .second .secondWrapper .filterCont button {
+  color: white;
+  background-color: #aa9b77;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 21px 33px;
+  align-self: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body main .second .secondWrapper .secondContentContainer .secondLine {
+  display: flex;
+  align-items: center;
+}
+body main .second .secondWrapper .secondContentContainer .secondLine .secondMen {
+  margin-right: 45px;
+}
+body main .second .secondWrapper .secondContentContainer .secondLine .secondWomen {
+  margin-left: 45px;
+}
+body main .second .secondWrapper .secondContentContainer .secondLine .horLine {
+  border: 1px #cccccc solid;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+body main .second .secondWrapper .secondContentContainer .menContent {
+  margin-bottom: 90px;
+}
+body main .second .secondWrapper .secondContentContainer .womenContent {
+  padding-bottom: 120px;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent {
+  min-height: 425px;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .menCounterCont {
+  display: flex;
+  flex-direction: row-reverse;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .menCounterCont .counter {
+  justify-self: flex-end;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .menCounterCont .counter img {
+  cursor: pointer;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .womenCounterCont {
+  display: flex;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .womenCounterCont .counter {
+  justify-self: flex-end;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .contentItems {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 978px) {
+  body main .second .secondWrapper .secondContentContainer .secondContent .contentItems {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .contentItems .contentItem {
+  padding: 20px;
+  height: 375px;
+  width: 320px;
+  background-color: #f5f6f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 978px) {
+  body main .second .secondWrapper .secondContentContainer .secondContent .contentItems .contentItem {
+    margin-bottom: 50px;
+  }
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .contentItems .contentItem .itemTop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .contentItems .contentItem .itemTop .itemColors {
+  display: flex;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .contentItems .contentItem .itemTop .itemColors .itemColor {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+  font-size: 14px;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .contentItems .contentItem .itemPic {
+  margin: auto;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .contentItems .contentItem .itemBottom {
+  display: flex;
+  justify-content: space-between;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .contentItems .contentItem .itemBottom .itemName {
+  color: #aa9b77;
+  font-size: 18px;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .contentItems .contentItem .itemBottom .itemPrice {
+  color: #424242;
+  font-size: 22px;
+  font-weight: bold;
+}
+body main .second .secondWrapper .secondContentContainer .secondContent .contentItems .activeItem {
+  border: 6px solid #aa9b77;
+}
+body main .third {
+  background-color: #aa9b77;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 978px) {
+  body main .third {
+    padding: 20px;
+  }
+}
+body main .third .aboutBlock {
+  text-align: center;
+  max-width: 710px;
+  padding: 90px;
+  border: 2px solid #918363;
+  position: relative;
+}
+body main .third .aboutBlock .aboutHeading {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #aa9b77;
+  padding: 0 20px;
+  color: #75694f;
+}
+body main .third .aboutBlock .aboutParagraph {
+  color: #424242;
+}
+body main .fourth {
+  background-color: #535253;
+  height: 70px;
+}
+body main .fourth .birdCont {
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+@media (max-width: 578px) {
+  body main .fourth .birdCont {
+    margin-left: 0;
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+body footer {
+  background-color: #424242;
+  min-height: 350px;
+}
+body footer .footerWrapper {
+  color: white;
+  min-height: inherit;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 978px) {
+  body footer .footerWrapper {
+    padding: 20px;
+  }
+}
+@media (max-width: 578px) {
+  body footer .footerWrapper {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+body footer .footerWrapper .footerLeft {
+  max-width: 310px;
+}
+@media (max-width: 578px) {
+  body footer .footerWrapper .footerLeft {
+    text-align: center;
+  }
+}
+body footer .footerWrapper .footerLeft h3 {
+  margin-bottom: 22px;
+}
+body footer .footerWrapper .footerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 578px) {
+  body footer .footerWrapper .footerRight {
+    text-align: center;
+    align-items: center;
+  }
+}
+body footer .footerWrapper .footerRight .footerLinks {
+  display: flex;
+  list-style: none;
+}
+body footer .footerWrapper .footerRight .footerLinks li {
+  margin-left: 18px;
+  font-size: 14px;
+}
+body footer .footerWrapper .footerRight p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

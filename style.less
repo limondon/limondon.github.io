@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background-color: grey;
+    header{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 70px;
+        height: 120px;
+        .logo{
+            margin: auto 0;
+            img{
+                cursor: pointer;
+            }
+        }
+        nav{
+            margin: auto 0;
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    color: white;
+                    font-size: 16px;
+                    margin: 10px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .first{
+            color: white;
+            background-image: url('./img/bg1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .textCont{
+                text-align: center;
+
+                h1{
+                    font-weight: bold;
+                    font-size: 48px;
+                    letter-spacing: 3px;
+                    margin-bottom: 20px;
+                }
+                p{
+                    margin: 0 auto;
+                    max-width: 600px;
+                    font-size: 18px;
+                }
+            }
+        }
+        .second{
+            background-color: #ffffff;
+            .secondWrapper{
+                margin: 0 auto;
+                max-width: 1090px;
+                @media (max-width: 978px) {
+                    padding: 0 20px;              
+                }
+                .filterCont{
+                    height: 140px;
+                    display: flex;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    .filters{
+                        display: flex;
+                        div{
+                            margin: auto 0;
+                            display: flex;
+                            align-items: center;
+                            input{
+                                margin: 9px;
+                                width: 24px;
+                                height: 24px;
+                                display: block;
+                                cursor: pointer;
+                            }
+                            span{
+                                display: block;
+                                margin: 9px;
+                            }
+                        }
+                    }
+                    button{
+                        color: white;
+                        background-color: #aa9b77;
+                        font-size: 14px;
+                        font-weight: bold;
+                        padding: 21px 33px;
+                        align-self: center;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+                .secondContentContainer{
+                    .secondLine{
+                        display: flex;
+                        align-items: center;
+                        .secondMen{
+                            margin-right: 45px;
+                        }
+                        .secondWomen{
+                            margin-left: 45px;
+                        }
+                        .horLine{
+                            border: 1px #cccccc solid;
+                            height: 1px;
+                            width: 100%;
+                            background-color: black;
+                        }
+                    }
+                    .menContent{
+                        margin-bottom: 90px;
+                    }
+                    .womenContent{
+                        padding-bottom: 120px;
+                    }
+                    .secondContent{
+                        min-height: 425px;
+                        .menCounterCont{
+                            display: flex;
+                            flex-direction: row-reverse;
+                            .counter{
+                                // border: 5px solid red;
+                                justify-self: flex-end;
+                                img{
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        .womenCounterCont{
+                            display: flex;
+                            .counter{
+                                // border: 5px solid red;
+                                justify-self: flex-end;
+                            }
+                        }
+                        .contentItems{
+                            margin-top: 5px;
+                            display: flex;
+                            justify-content: space-between;
+                            @media (max-width: 978px) {
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                align-items: center;
+                            }
+                            .contentItem{
+                                padding: 20px;
+                                height: 375px;
+                                width: 320px;
+                                background-color: #f5f6f7;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                @media (max-width: 978px) {
+                                    margin-bottom: 50px;
+                                }
+                                .itemTop{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                    .itemSize{
+                                        
+                                    }
+                                    .itemColors{
+                                        display: flex;
+                                        .itemColor{
+                                            border-radius: 50%; 
+                                            width: 20px; 
+                                            height: 20px;
+                                            margin: 0 2px;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                                .itemPic{
+                                    margin: auto;
+                                }
+                                .itemBottom{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    .itemName{
+                                        color: #aa9b77;
+                                        font-size: 18px;
+                                    }
+                                    .itemPrice{
+                                        color: #424242;
+                                        font-size: 22px;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                            .activeItem{
+                                border: 6px solid #aa9b77;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .third{
+            background-color: #aa9b77;
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: 978px) {
+                padding: 20px;                  
+            }
+            .aboutBlock{
+                text-align: center;
+                max-width: 710px;
+                padding: 90px;
+                border: 2px solid #918363;
+                position: relative;
+                .aboutHeading{
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-50%) translateY(-50%);
+                    background-color: #aa9b77;
+                    padding: 0 20px;
+                    color: #75694f;
+                }
+                .aboutParagraph{
+                    color: #424242;
+                }
+            }
+        }
+        .fourth{
+            background-color: #535253;
+            height: 70px;
+            .birdCont{
+                margin-left: 70px;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                color: white;
+                @media (max-width: 578px) {
+                    margin-left: 0;      
+                    margin: 0 auto;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+    footer{
+        background-color: #424242;
+        min-height: 350px;
+        .footerWrapper{
+            color: white;
+            min-height: inherit;
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width: 978px) {
+                padding: 20px;                  
+            }
+            @media (max-width: 578px) {
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .footerLeft{
+                @media (max-width: 578px) {
+                    text-align: center;          
+                }
+                max-width: 310px;
+                h3{
+                    margin-bottom: 22px;
+                }
+            }
+            .footerRight{
+                @media (max-width: 578px) {
+                    text-align: center;   
+                    align-items: center;       
+                }
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                .footerLinks{
+                    display: flex;
+                    list-style: none;
+                    li{
+                        margin-left: 18px;
+                        font-size: 14px;
+                    }
+                }
+                p{
+                    margin-top: 10px;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
